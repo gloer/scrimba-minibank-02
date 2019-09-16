@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minibanken</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <h1>Velkommen til min minibank</h1>
+    <section class="minibank">
+        <h2>Saldo på konto: kr. <span id="txtSaldo"></span></h2>
+
+        <hr>
+        <h2>Ta ut penger</h2>
+        <form id="skjemaUttak">
+            <label>Skriv inn beløpet du ønsker å ta ut: </label>
+            <input type="number" id="inpUttak" required>
+            <button type="submit">Ta ut penger</button>
+        </form>
+        <hr>
+
+        <form id="skjemaInnskudd">
+            <label>Skriv inn beløpet du ønsker å sette inn: </label>
+            <input type="number" id="inpInnskudd" required>
+            <button type="submit">Sett inn penger</button>
+        </form>
+
+        <hr>
+        <p id="info"></p>
+    </section>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
